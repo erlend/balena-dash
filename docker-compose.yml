@@ -8,3 +8,7 @@ services:
     restart: always
     build: ./scheduler
     privileged: true
+  server:
+    restart: always
+    build: ./server
+    privileged: true
