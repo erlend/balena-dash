@@ -4,7 +4,15 @@ services:
     restart: always
     build: ./wpe
     privileged: true
+    environment:
+      WPE_URL: http://localhost:8080
+
   scheduler:
     restart: always
     build: ./scheduler
+    privileged: true
+
+  server:
+    restart: always
+    build: ./server
     privileged: true
